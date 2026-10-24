@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+  font-family: "Open Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background: linear-gradient(to right, #1e63d5, #4f8df5);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+}
+
+.card {
+  width: 280px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px 25px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+
+  transform: translateY(-10px); 
+  
+}
+.card h4 {
+  color: #555;
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.card h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+.card ul {
+  list-style: none;
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.card ul li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.card ul li.unavailable {
+  color: #bbb;
+}
+
+.card ul li i {
+  width: 16px;
+}
+
+.card ul li:not(.unavailable) i {
+  color: #2ecc71;
+}
+
+.card ul li.unavailable i {
+  color: #ccc;
+}
+
+.btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 30px;
+  background-color: #1e63d5;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
