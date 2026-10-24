@@ -1,16 +1,31 @@
-# React + Vite
+# React Pricing Cards Component
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A responsive and dynamic pricing card component built with React. This project demonstrates component-based architecture by separating UI logic from data, mapping through arrays to render elements dynamically, and applying conditional styling.
 
-Currently, two official plugins are available:
+##  Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* **Dynamic Data Rendering:** Uses the `.map()` method to generate pricing cards from a centralized data array.
+* **Conditional Styling & Icons:** Dynamically renders FontAwesome tick (`fa-check`) or cross (`fa-x`) icons and grays out text based on feature availability.
+* **Fully Responsive:** Adapts seamlessly to desktop, tablet, and mobile screens using CSS media queries.
+* **Interactive UI:** Smooth transition effects, including a slight upward lift and enhanced box-shadow when hovering over the cards.
+* **Clean Project Structure:** Separation of concerns with dedicated folders for components and mock data.
 
-## React Compiler
+##  Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Frontend:** React (Functional Components, Props)
+* **Build Tool:** Vite
+* **Styling:** CSS3 (Flexbox, Transitions, Hover States)
+* **Icons:** FontAwesome (via CDN)
+* **Fonts:** Open Sans (Google Fonts)
 
-## Expanding the Oxlint configuration
+## Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+```text
+src/
+├── components/
+│   └── PricingCard.jsx    # The individual card component
+├── data/
+│   └── pricingData.js     # The array of pricing tier objects
+├── App.jsx                # Main container mapping the data
+├── App.css                # Styling, responsiveness, and hover effects
+└── main.jsx               # React entry point
